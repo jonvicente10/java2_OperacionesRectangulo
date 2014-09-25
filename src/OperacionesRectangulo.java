@@ -6,7 +6,7 @@ public class OperacionesRectangulo {
 	public static void main (String args[]) {
 
 		/* Se declaran la variable alto y base */
-		double altointroducido, baseintroducida;
+		double altointroducido, baseintroducida, area, perimetro;
 
 		Rectangulo rectangulo1 = new Rectangulo();
 	
@@ -24,9 +24,12 @@ public class OperacionesRectangulo {
 		rectangulo1.setAlto(altointroducido);
 		rectangulo1.setBase(baseintroducida);
 
-		/* El sistema nos muestra el resultado que obtiene mediante un getter */
-		System.out.println("\nEl area del rectangulo es: " + rectangulo1.getArea() + "m²");
-		System.out.println("\nEl perimetro del rectangulo es: " + rectangulo1.getPerimetro() + "m");
+		/* Las variables area y perimetro toman los valores calculados */
+		area = rectangulo1.area();
+		perimetro = rectangulo1.perimetro();
 
+		/* El sistema nos muestra el resultado */
+		System.out.println("\nEl area del rectangulo es: " + area + "m²");
+		System.out.println("\nEl perimetro del rectangulo es: " + perimetro + "m");
 	}
 }

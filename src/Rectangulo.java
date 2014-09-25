@@ -6,7 +6,7 @@
 	/* Declaracion de variables */
 
 		/* Se declaran las variables privadas altura y base */
-		private double alto, base, area, perimetro;
+		private double alto, base;
 
 
 	/* Setters y Getters de alto y base */
@@ -40,28 +40,20 @@
 	/* Operaciones para calcular el area y el perimetro */
 
 		/* Metodo para calcular y establecer el valor del area teniendo en cuenta el valor introducido */
-		public void setArea ()
+		public double area()
  		{
-			area = this.getAlto * this.getBase;
-		}
-
-		/* Metodo para obtener (get) el valor de la variable area */
-		public double getArea()
- 		{
-			return area;
+			double result;
+			result = this.getAlto() * this.getBase();
+			return result;
 		}
 
 
-		/* Metodo para calcular y establecer el valor de la circunferencia teniendo en cuenta el valor introducido */
-		public void setPerimetro ()
+		/* Metodo para calcular y establecer el valor del perimetro teniendo en cuenta el valor introducido */
+		public double perimetro()
  		{
-			perimetro = (2 * this.getBase) + (2 * this.getAlto);
+			double result;
+			result = (2 * this.getBase()) + (2 * this.getAlto());
+			return result;
  		}
-
-		/* Metodo para obtener (get) el valor de la variable circunferencia */
-		public double getPerimetro()
- 		{
-			return perimetro;
-		}
 
 	}
